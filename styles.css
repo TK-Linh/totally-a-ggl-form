@@ -1,6 +1,5 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .background1 {
@@ -31,4 +30,34 @@ body {
     background-size: cover;
     height: 100%;
     min-height: 100vh;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    align-items: center;
+}
+.tracklist-button {
+    font-size: 20;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: pink;
+    position: absolute;
+    width: 40vh;
+    height: 60vh;
+    top: 20%;
+    left: 5%
+}
+
+.title-button {
+    font-size: 20;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: pink;
+    position: absolute;
+    width: 40vh;
+    height: 60vh;
+    top: 20%;
+    left: 73%
 }
