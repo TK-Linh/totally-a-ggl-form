@@ -1,0 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.background1 {
+    background-image: url("img/tit.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.booba {
+    font-size: 20;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    width: 45vh;
+    height: 45vh;
+    top: 44%;
+    left: 40%
+}
+
+.background2 {
+    background-image: url("img/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
+}
