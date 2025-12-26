@@ -17,7 +17,7 @@ function openModal(homie) {
     } else if (homie == 'linha') {
         title = 'linha-title';
         wish = `
-        <p>This is linha's wish for ha an.<p>
+        <p>Happy birthday babygurl Hà Annnnnn🎉🩵💐🌹🩷🤍💙🎂🎊🥳. Chưa gì đã đến sinh nhật m aka New Year ròiiii lol🤣. I think its been a year to remember-lots of milestones. T nghĩ là năm vừa rồi m cũng đã có nhiều thành tựu đáng nhớ rùiii 🥳 proud of you man ☺️. Như là đi du học nè, bắt đầu 1 cuộc sống mới nè 🤭. Chúc Hà An tuổi mới sẽ tiếp tục có những thành tựu mới nè, lun lun vui vẻ khoẻ mạnh nè, và có bồ nha lol🤭, tìm được Sabrina Carpenter của đời mình nha😆 Mong là năm sau ce mình sẽ đi đâu đó chơi được and have a successful year😇<p>
         `;
     } else if (homie == 'chanh') {
         title = 'chanh-title';
@@ -46,3 +46,18 @@ function closeModal() {
     document.getElementById("wishModal").style.display = "none";
     document.getElementById("overlay").style.display = "none";
 }
+    //play gif on click
+function playConfetti() {
+    console.log("confetti playing");
+    var animation = bodymovin.loadAnimation({
+    container: document.getElementById("confetti"),
+    path: 'asset/Confetti.json',
+    render: 'svg',
+    loop: false,
+})
+}
+
+// animation.addEventListener("complete", function () {
+//     animation.destroy()
+//     console.log("animaton done")
+// });

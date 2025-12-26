@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
 </head>
 
 <body class="background2">
     <div class="container2">
         <div id="overlay"></div>
-        <div class="tracklist">
-            <p class="tracklist-head">Tracklist. There will be 5 songs button here</p>
-            <button class="wish-item" onclick="openModal('alka')">alka</button>
+        <div id="confetti"></div>
+        <div class="card">
+            <p class="tracklist-head">Tracklist</p>
+            <button class="wish-item" onclick="openModal('alka'); playConfetti();">alka</button>
             <button class="wish-item" onclick="openModal('roy')">roy</button>
             <button class="wish-item" onclick="openModal('linha')">linh a</button>
             <button class="wish-item" onclick="openModal('chanh')">chanh</button>
             <button class="wish-item" onclick="openModal('linhb')">lb</button>
             <button class="wish-item" onclick="openModal('thp')">thp</button>
         </div>
-        <div class="title">
+        <div class="card" style="left:72%">
             <p class="title-text">Happy Birthday!!!</p>
         </div>
         <!-- Wish box -->
         <div id="wishModal">
             <h3 id="wishTitle"></h3>
             <p id="wishText"></p>
-            <button onclick="closeModal()">Close</button>
+            <button class="closeButton" onclick="closeModal()">Close</button>
         </div>
     </div>
     <script src="wish.js"></script>
 </body>
-
 </html>

@@ -37,14 +37,21 @@ body {
     min-height: 100vh;
 }
 
-/* wish card */
 .container2 {
     display: flex;
     justify-content: space-around;
     gap: 70px;
     align-items: center;
 }
-.tracklist {
+
+#confetti {
+    position: absolute;
+    top: 50px;
+    z-index: 12;
+    height: 1000px;
+}
+/* card */
+.card {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -57,23 +64,28 @@ body {
     width: 40vh;
     height: 60vh;
     top: 20%;
-    left: 5%
+    left: 5%;
+    text-align: center;
 }
-
+/* tracklist card */
 .tracklist-head {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .wish-item {
     background-color: palevioletred;
     width: auto;
     height: 30px;
+    padding-top: 7px;
+    border: none
 }
 
 .wish-item:hover {
     background-color: rgb(205, 133, 157);
     width: auto;
     height: 30px;
+    padding-top: 5px;
+    border: none
 }
 
 #wishModal {
@@ -87,12 +99,24 @@ body {
     z-index: 11;
     flex-direction: column;
     padding-top: 20px;
+    padding-inline: 40px;
     justify-content: center;
     border-radius: 10%;
     box-shadow: 0 10px 30 px rgb(0, 0, 0, 0.3);
     text-align: center;
     overflow-y: auto;
-    transition:linear
+}
+
+.closeButton {
+    position: absolute;
+    justify-content: center;
+    background-color: palevioletred;
+    width: auto;
+    height: 30px;
+    padding: 7px;
+    left: 46%;
+    bottom: 20px;
+    z-index: 13
 }
 
 #overlay {
@@ -105,20 +129,6 @@ body {
 }
 
 /* title card */
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 20px;
-    border-radius: 10%;
-    background-color: pink;
-    position: absolute;
-    width: 40vh;
-    height: 60vh;
-    top: 20%;
-    right: 5%
-}
-
 .title-text {
     font-size: 50px;
     text-align: center;
