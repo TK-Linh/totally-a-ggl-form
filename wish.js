@@ -1,3 +1,4 @@
+
 function openModal(homie) {
     console.log('showWishes called with:', homie);
 
@@ -37,11 +38,11 @@ function openModal(homie) {
     wishTitle.textContent = title;
     wishText.innerHTML = wish;
 
-    // document.getElementById("overlay").style.display = "block";
     document.getElementById("wishModal").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
 }
 
 function closeModal() {
-    // document.getElementById("overlay").style.display = "none";
     document.getElementById("wishModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
 }
