@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "Elegant-typewriter";
+    src: url("asset/fonts/ELEGANT TYPEWRITER Regular.ttf");
+}
+@font-face {
+    font-family: "Old-newspaper-types";
+    src: url("asset/fonts/OldNewspaperTypes.ttf");
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Elegant-typewriter", "Old-newspaper-types";
     cursor: url("asset/cursor.png"), auto;
 }
 
@@ -51,8 +60,37 @@ body {
     height: 1000px;
     pointer-events: none
 }
+
+/* to memo page button */
+.big-button {
+    position: absolute;
+    justify-content: center;
+    background-color: palevioletred;
+    width: auto;
+    height: auto;
+    padding: 7px;
+    top: 70px;
+    left: 37%;
+    font-family: "Elegant-typewriter";
+    font-size: 30px;
+    border-radius: 10px 10px 10px 10px;
+    animation: pulse 1s infinite
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 /* card */
 .card {
+    background-image: url("asset/pink-paper-14016072.webp");
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -66,23 +104,27 @@ body {
     height: 60vh;
     top: 20%;
     left: 5%;
-    text-align: center;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 /* tracklist card */
 .tracklist-head {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: "Elegant-typewriter";
+    color: rgb(83, 16, 38);
+    text-align: center;
 }
 
 .wish-item {
-    background-color: palevioletred;
+    background-color: rgba(0, 0, 0, 0);
     width: auto;
     height: 30px;
     padding-top: 7px;
-    border: none
+    border: none;
+    font-family: "Old-newspaper-types";
 }
 
 .wish-item:hover {
-    background-color: rgb(205, 133, 157);
+    background-color: rgba(0, 0, 0, 0.1);
     width: auto;
     height: 30px;
     padding-top: 5px;
@@ -93,7 +135,7 @@ body {
     position: relative;
     top: 200px;
     transform: (-50%,-50%);
-    width: 500px;
+    width: 500px !important;
     min-height: 500px;
     background-color: white;
     display: none;
@@ -106,6 +148,7 @@ body {
     box-shadow: 0 10px 30 px rgb(0, 0, 0, 0.3);
     text-align: center;
     overflow-y: auto;
+    font-family: "Old-newspaper-types"
 }
 
 .closeButton {
@@ -117,7 +160,7 @@ body {
     padding: 7px;
     left: 46%;
     bottom: 20px;
-    z-index: 13
+    font-family: "Elegant-typewriter"
 }
 
 #overlay {
@@ -133,4 +176,16 @@ body {
 .title-text {
     font-size: 50px;
     text-align: center;
+    color: rgb(83, 16, 38);
+}
+
+/* memo styles */
+.background3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("asset/crumpled-yellow-paper-texture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 100vh;
 }

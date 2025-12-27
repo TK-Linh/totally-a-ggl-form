@@ -7,9 +7,13 @@ const animation = lottie.loadAnimation({
     autoplay: false,
 })
 
+//display memo page button
+var count = 0
+
 //things that play on clicking wish item
 function openModal(homie) {
     console.log('showWishes called with:', homie);
+    console.log('no. of wishes opened', count);
 
     let title = '';
     let wish = ''
@@ -18,31 +22,37 @@ function openModal(homie) {
         wish = `
         <p>This is alka's wish for ha an.<p>
         `;
+        count++;
     } else if (homie == 'roy') {
         title = 'roy-title';
         wish = `
         <p>This is roy's wish for ha an.<p>
         `;
+        count++;
     } else if (homie == 'linha') {
         title = 'linha-title';
         wish = `
         <p>Happy birthday babygurl Hà Annnnnn🎉🩵💐🌹🩷🤍💙🎂🎊🥳. Chưa gì đã đến sinh nhật m aka New Year ròiiii lol🤣. I think its been a year to remember-lots of milestones. T nghĩ là năm vừa rồi m cũng đã có nhiều thành tựu đáng nhớ rùiii 🥳 proud of you man ☺️. Như là đi du học nè, bắt đầu 1 cuộc sống mới nè 🤭. Chúc Hà An tuổi mới sẽ tiếp tục có những thành tựu mới nè, lun lun vui vẻ khoẻ mạnh nè, và có bồ nha lol🤭, tìm được Sabrina Carpenter của đời mình nha😆 Mong là năm sau ce mình sẽ đi đâu đó chơi được and have a successful year😇<p>
         `;
+        count++;
     } else if (homie == 'chanh') {
         title = 'chanh-title';
         wish = `
         <p>This is chanh's wish for ha an.<p>
         `;
+        count++;
     } else if (homie == 'linhb') {
         title = 'linhb-title';
         wish = `
         <p>This is linhb's wish for ha an.<p>
         `;
+        count++;
     } else if (homie == 'thp') {
         title = 'thp-title';
         wish = `
         <p>This is thp's wish for ha an.<p>
         `;
+        count++;
     }
     wishTitle.textContent = title;
     wishText.innerHTML = wish;
@@ -50,13 +60,16 @@ function openModal(homie) {
     document.getElementById("wishModal").style.display = "block";
     document.getElementById("overlay").style.display = "block";
     animation.goToAndPlay(0, true);
+
+    if (count > 5) {
+    document.getElementById("toMemo").style.display = "block";
+}
 }
 
 function closeModal() {
     document.getElementById("wishModal").style.display = "none";
     document.getElementById("overlay").style.display = "none";
 }
-
 
 // document.getElementById("wish-item").addEventListener("click", () => {
 //     animation.goToAndPlay(0, true);
