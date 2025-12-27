@@ -7,7 +7,7 @@ const animation = lottie.loadAnimation({
     autoplay: false,
 })
 
-//display memo page button
+//display memo page button on clicking all wish-items
 var count = 0
 
 //things that play on clicking wish item

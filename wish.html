@@ -9,32 +9,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.13.0/lottie.min.js"></script>
 </head>
 
-<body class="background2">
-    <a href="memo.html">
-        <button class="big-button" id="toMemo" style="display: none">Click for another surprise!</button>
-    </a>
-    <div class="container2">
-        <div id="overlay"></div>
-        <div id="confetti"></div>
-        <div class="card">
-            <p class="tracklist-head">Tracklist</p>
-            <button class="wish-item" onclick="openModal('alka')">alka</button>
-            <button class="wish-item" onclick="openModal('roy')">roy</button>
-            <button class="wish-item" onclick="openModal('linha')">linh a</button>
-            <button class="wish-item" onclick="openModal('chanh')">chanh</button>
-            <button class="wish-item" onclick="openModal('linhb')">lb</button>
-            <button class="wish-item" onclick="openModal('thp')">thp</button>
-        </div>
-        <div class="card" style="left:72%; padding-top: 0">
-            <p class="title-text">Happy Birthday!!!</p>
-        </div>
-        <!-- Wish box -->
-        <div id="wishModal">
-            <h3 id="wishTitle"></h3>
-            <p id="wishText"></p>
-            <button class="closeButton" onclick="closeModal()">Close</button>
-        </div>
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
     </div>
+    <main class="background2" id="content">
+        <a href="memo.html">
+            <button class="big-button" id="toMemo" style="display: none">Click for another surprise!</button>
+        </a>
+        <div class="container2">
+            <div id="overlay"></div>
+            <div id="confetti"></div>
+            <div class="card">
+                <p class="tracklist-head">Tracklist</p>
+                <button class="wish-item" onclick="openModal('alka')">alka</button>
+                <button class="wish-item" onclick="openModal('roy')">roy</button>
+                <button class="wish-item" onclick="openModal('linha')">linh a</button>
+                <button class="wish-item" onclick="openModal('chanh')">chanh</button>
+                <button class="wish-item" onclick="openModal('linhb')">lb</button>
+                <button class="wish-item" onclick="openModal('thp')">thp</button>
+            </div>
+            <div class="card" style="left:72%; padding-top: 0">
+                <p class="title-text">Happy Birthday!!!</p>
+            </div>
+            <!-- Wish box -->
+            <div id="wishModal">
+                <h3 id="wishTitle"></h3>
+                <p id="wishText"></p>
+                <button class="closeButton" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </main>
     <script src="wish.js"></script>
+    <script src="loader.js"></script>
 </body>
+
 </html>
