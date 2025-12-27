@@ -49,6 +49,7 @@ body {
     top: 50px;
     z-index: 12;
     height: 1000px;
+    pointer-events: none
 }
 /* card */
 .card {

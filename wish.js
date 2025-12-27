@@ -1,4 +1,13 @@
+//play gif on click
+const animation = lottie.loadAnimation({
+    container: document.getElementById("confetti"),
+    path: 'asset/Confetti.json',
+    render: 'svg',
+    loop: false,
+    autoplay: false,
+})
 
+//things that play on clicking wish item
 function openModal(homie) {
     console.log('showWishes called with:', homie);
 
@@ -40,22 +49,18 @@ function openModal(homie) {
 
     document.getElementById("wishModal").style.display = "block";
     document.getElementById("overlay").style.display = "block";
+    animation.goToAndPlay(0, true);
 }
 
 function closeModal() {
     document.getElementById("wishModal").style.display = "none";
     document.getElementById("overlay").style.display = "none";
 }
-    //play gif on click
-function playConfetti() {
-    console.log("confetti playing");
-    var animation = bodymovin.loadAnimation({
-    container: document.getElementById("confetti"),
-    path: 'asset/Confetti.json',
-    render: 'svg',
-    loop: false,
-})
-}
+
+
+// document.getElementById("wish-item").addEventListener("click", () => {
+//     animation.goToAndPlay(0, true);
+// })
 
 // animation.addEventListener("complete", function () {
 //     animation.destroy()
