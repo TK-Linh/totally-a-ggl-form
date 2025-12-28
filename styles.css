@@ -7,8 +7,13 @@
     src: url("asset/fonts/OldNewspaperTypes.ttf");
 }
 
+@font-face {
+    font-family: "Shintosa";
+    src: url("asset/fonts/Shintosa.ttf");
+}
+
 body {
-    font-family: "Elegant-typewriter", "Old-newspaper-types";
+    font-family: "Shintosa", "Elegant-typewriter","Old-newspaper-types", "Times New Roman";
     cursor: url("asset/cursor.png"), auto;
 }
 
@@ -94,7 +99,7 @@ body {
 .big-button {
     position: absolute;
     justify-content: center;
-    background-color: palevioletred;
+    background-color: rgba(255, 255, 255, 0.502);
     width: auto;
     height: auto;
     padding: 7px;
@@ -122,9 +127,10 @@ body {
     background-image: url("asset/pink-paper-14016072.webp");
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 30px;
     justify-content: center;
     border-radius: 10%;
     background-color: pink;
@@ -138,7 +144,7 @@ body {
 /* tracklist card */
 .tracklist-head {
     font-size: 40px;
-    font-family: "Elegant-typewriter";
+    font-family: "Shintosa";
     color: rgb(83, 16, 38);
     text-align: center;
 }
@@ -150,6 +156,7 @@ body {
     padding-top: 7px;
     border: none;
     font-family: "Old-newspaper-types";
+    font-size: 16px
 }
 
 .wish-item:hover {
@@ -162,22 +169,23 @@ body {
 
 #wishModal {
     position: relative;
-    top: 200px;
+    top: 100px;
     transform: (-50%,-50%);
     width: 500px !important;
-    min-height: 400px;
+    min-height: 250px;
+    height: auto;
     background-color: white;
     display: none;
     z-index: 11;
     flex-direction: column;
     padding-top: 20px;
     padding-inline: 30px;
-    justify-content: center;
+    padding-bottom: 60px;
+    justify-content: space-around;
     border-radius: 10%;
     box-shadow: 0 10px 30 px rgb(0, 0, 0, 0.3);
     text-align: center;
-    overflow-y: auto;
-    font-family: "Old-newspaper-types"
+    font-family: "Times New Roman";
 }
 
 .closeButton {
@@ -221,4 +229,20 @@ body {
 
 #memo-content {
     display: none
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+    align-items: center;
+}
+
+.pic {
+    position: relative;
+    transform: (-50%,-50%);
+    max-width: 500px;
+    max-height: 5000px;
+    width: auto;
+    height: auto
 }
