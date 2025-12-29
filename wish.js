@@ -7,6 +7,9 @@ const animation = lottie.loadAnimation({
     autoplay: false,
 })
 
+//confetti sound effect
+const confettiSound = document.getElementById("confettiSound")
+
 //display memo page button on clicking all wish-items
 var count = 0
 
@@ -20,7 +23,17 @@ function openModal(homie) {
     if (homie == 'alka') {
         title = '1. Never getting laid - Lyrics';
         wish = `
-        <p>This is alka's wish for ha an.<p>
+        <p>Gửi Hà An/Màu Vàng Rất Đẹp/Rinaisacrane/Gooner omega bottom fertile bóng bẩy nhẫy mỡ giòn quay chảy nước nhất hành tinh (cùng 7749 biệt danh kinh khủng khác mà tạm thời t chưa dám nhớ ra),
+<br><br>CHÚC MỪNG NGÀY XEM SẾCH HỢP PHÁP!!!!!!!
+<br><br>Now go hit Twitter and hit on the hottest picture of Sabrina you can find and start hitting it so hard I can hear storms forming on the other side of the globe, you deserve it.
+<br><br>Nghiêm túc mà nói thì, chúc mừng sinh nhật bbi <33 Chúc girlie tuổi mới có tất cả - tiền tài, tình yêu, tình bạn, thành công, thu nhập, thịt quay Nghệ An, và quan trọng nhất là ten hot women in lingerie tied up in soft yellow silk lace in your bed. Có mỗi 1 cái bất khả thi thôi, chứ còn lại thì t đã luôn tin m làm dc tốt. Sải cánh tung bay nhé đại bàng con nước Mĩ, you were sculpted by God’s hand to earn this Psych degree bro. Còn for women thì ờm. Cố lên…
+<br><br>Đây cũng là sinh nhật lần thứ 7 mà t được đón cùng m and dare I say it gets better every year, even when you’re not 13 floors but 13 connecting flights away. Cam on vi da den, vì tin nhắn dài 30 dòng lúc nửa đêm khi t cần, vì mấy con fic dài hơn Epstein files, vì vừa có khả năng làm t khóc ướt hơn Onlyfans và làm t cười như hài nhạt Trấn Thành trong 1 phút đổ lại, vì thấy t xem H*zbin H*tel xong chiụ đu cùng để cả lũ thành losers baby, vì tất cả mọi thứ từ lớp 7 đến giờ. You’re truly my kindred spirit in every sense of the word. T nghĩ t nhắc lại cái này hơi nhiều but I compared you to coffee once, I think, bc despite the initial bitterness, coffee turns sweet and addicting after. And totally not bc I want to gulp you down that’s that’s me expresso or sth. I love you, srsly. Even if you never find the 10 hot women in your bed, I’d be willing to strip and clone myself 9 times in soft silky yellow lace for a substitute like little breedable omega catgirls. Okay maybe that was a bit of a stretch, since you don’t speak French nor are you blonde, but the sentiment is true.
+<br><br>Hope you have a not short and very sweet and super spicy and absolutely spectacular and extremely sexy bday (I ran out of S adjectives and superlatives). You’re proof that Christmas miracles do exist, and they usually come 3 days late, and in different forms, bc mine took that of a horny teenage girls w 0 bitches, 5 questionable ppl in inbox, 10 arrest warrants and 20 opened AO3 tabs. The chill is settling on my shoulder like a ghost hug and the streets stretch long and empty and I’m yearning for you like an incel for anime waifu feet on reddit forums, and tbh your presence here rn would mean more than any fancy present I unwrap. Can I unwrap you?
+<br><br>Mulberry Lane needs its resident gooner back,
+<br><br>Công dân kiểu mẫu sinh hoạt điều độ ở tầng 5
+<br><br>P.S: Xin lỗi vì nửa sến nửa sarc I’m allergic to consistency and good writing, mong là m đã khóc ướt đẫm cả 2 khoé khi đọc. I put my whole Alkaussy so far into this I might’ve actl accidentally impregnated the doc. To end this on a less discordant note, 我们是查理柯克 ～
+<br><br>PP.S: Not letting anyone forget you were into BTS at 7th grade bc what’s a bday w/o a lil humiliation. Not like the colonizer yaoi writer might have any leg to stand on, but still. Tình yêu ta mượt như bơ chảy, vỏ bọc tội phạm vì nàng mà hoá thành mây (?)
+<p>
         `;
         count++;
     } else if (homie == 'roy') {
@@ -44,13 +57,20 @@ function openModal(homie) {
     } else if (homie == 'chanh') {
         title = '4. Tears in my pants - Lyrics';
         wish = `
-        <p>This is chanh's wish for ha an.<p>
+        <p>hello my latte bbb (big boob blonds) loving future therapist 🥺😻👩‍❤️‍💋‍👩 chờ mãi cả nhóm mới bằng tuổi e gái mới lớn ạ hahahihi 😋
+<br><br>chơi với nhau đc kbiet bnhieu cái snhat r ha? trong từng ấy năm thì đã có tận đây là lần t2 chia li r (nma k hẳn là chia li ý là nsndhjs) nma chưa bao h cả nhóm xa nhau đến vậy. nhưng t mong và t tin rằng ae sẽ chơi bền đc với nhau th, 7(ish) tháng nữa gặp lại nhau r. Chúc e gái vui tươi học dỏi xinh gái không bao h lonely nha 👅🫦 ily
+<br><br>-🍋<p>
         `;
         count++;
     } else if (homie == 'linhb') {
         title = '5. Short and savory - Lyrics';
         wish = `
-        <p>This is linhb's wish for ha an.<p>
+        <p>Hello my boobie obsessed psychology prodigy of a friend
+<br><br>With this day our group officially consists of 0 minors and 6 adults eligible for jail. While i wished that we could stay accountability and responsibility free for longer, im glad this means we can book an airbnb and have a girls trip!!! (Fuck the schedule though why is my spring break exactly after urs). I lowk miss ur vibe, ur herding the friend group, and ur juicy ass bouncing on my thighs (my guys ass isnt as nice).
+<br><br>I wish u a happy, fulfilling next year, outdoing all ur classmates, getting praise from ur profs, snatchin the internships (i rlly need some rn). Ive got faith that a rich white blonde girl with huge badonkas (and a great personality ofc) will pick u up, put u in her private jet and u both will fly off to the sunset with millions in ur linked bank account
+<br><br>Happy bday
+<br><br>P.s. This is kinda short cuz i needed to cook the web
+<p>
         `;
         count++;
     } else if (homie == 'thp') {
@@ -72,6 +92,7 @@ function openModal(homie) {
     document.getElementById("wishModal").style.display = "block";
     document.getElementById("overlay").style.display = "block";
     animation.goToAndPlay(0, true);
+    confettiSound.play()
 
     if (count > 5) {
         document.getElementById("toMemo").style.display = "block";
