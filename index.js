@@ -20,5 +20,3 @@ hoverRegion.addEventListener("mouseenter", () => {
         sound.play();
     }
 });
-
-

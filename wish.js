@@ -69,7 +69,7 @@ function openModal(homie) {
 <br><br>With this day our group officially consists of 0 minors and 6 adults eligible for jail. While i wished that we could stay accountability and responsibility free for longer, im glad this means we can book an airbnb and have a girls trip!!! (Fuck the schedule though why is my spring break exactly after urs). I lowk miss ur vibe, ur herding the friend group, and ur juicy ass bouncing on my thighs (my guys ass isnt as nice).
 <br><br>I wish u a happy, fulfilling next year, outdoing all ur classmates, getting praise from ur profs, snatchin the internships (i rlly need some rn). Ive got faith that a rich white blonde girl with huge badonkas (and a great personality ofc) will pick u up, put u in her private jet and u both will fly off to the sunset with millions in ur linked bank account
 <br><br>Happy bday
-<br><br>P.s. This is kinda short cuz i needed to cook the web
+<br><br>P.s. This is kinda short cuz i needed to cook the web which is like 500 lines total
 <p>
         `;
         count++;
