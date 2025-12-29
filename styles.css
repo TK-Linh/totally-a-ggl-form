@@ -39,7 +39,8 @@ body {
     height: 55vh;
     top: 40%;
     left: 37%;
-    opacity: 0
+    opacity: 0;
+    display: none;
 }
 
 #loader {
@@ -172,7 +173,7 @@ body {
     position: relative;
     top: 100px;
     transform: (-50%,-50%);
-    width: 500px !important;
+    width: 700px !important;
     min-height: 250px;
     height: auto;
     background-color: white;
